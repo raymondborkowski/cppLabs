@@ -1,0 +1,7 @@
+g++ main.cpp -o lab01
+./lab01
+./lab01 | tee lab01.out
+diff lab01.out lab01.out.correct
+g++ -g main.cpp -o lab01
+lldb lab01
+g++ -Wall -Werror -O1 -pedantic -g main.cpp -o lab01

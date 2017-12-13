@@ -25,6 +25,10 @@
 /* Begin PBXFileReference section */
 		C11F52D71FE1D9B200A5DB24 /* lab01 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = lab01; sourceTree = BUILT_PRODUCTS_DIR; };
 		C11F52DA1FE1D9B200A5DB24 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		C11F52E11FE1DC0700A5DB24 /* Lab01_Linux.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Lab01_Linux.pdf; sourceTree = "<group>"; };
+		C11F52E21FE1DC9000A5DB24 /* lab01.out.correct */ = {isa = PBXFileReference; lastKnownFileType = text; name = lab01.out.correct; path = ../../../../Downloads/lab01.out.correct; sourceTree = "<group>"; };
+		C11F52E41FE1DCE500A5DB24 /* lab01.out.correct */ = {isa = PBXFileReference; lastKnownFileType = text; path = lab01.out.correct; sourceTree = "<group>"; };
+		C11F52E51FE1DD0A00A5DB24 /* commands.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = commands.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +61,11 @@
 		C11F52D91FE1D9B200A5DB24 /* lab01 */ = {
 			isa = PBXGroup;
 			children = (
+				C11F52E41FE1DCE500A5DB24 /* lab01.out.correct */,
+				C11F52E11FE1DC0700A5DB24 /* Lab01_Linux.pdf */,
+				C11F52E21FE1DC9000A5DB24 /* lab01.out.correct */,
 				C11F52DA1FE1D9B200A5DB24 /* main.cpp */,
+				C11F52E51FE1DD0A00A5DB24 /* commands.txt */,
 			);
 			path = lab01;
 			sourceTree = "<group>";

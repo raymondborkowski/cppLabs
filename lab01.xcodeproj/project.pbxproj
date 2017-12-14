@@ -31,6 +31,7 @@
 		C11F52E51FE1DD0A00A5DB24 /* commands.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = commands.txt; sourceTree = "<group>"; };
 		C11F52E91FE1EBC400A5DB24 /* commands.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = commands.txt; sourceTree = "<group>"; };
 		C11F52EA1FE1F7CF00A5DB24 /* lab02 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = lab02; sourceTree = "<group>"; };
+		C11F52EB1FE2D83100A5DB24 /* lab03 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = lab03; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +48,7 @@
 		C11F52CE1FE1D9B200A5DB24 = {
 			isa = PBXGroup;
 			children = (
+				C11F52EB1FE2D83100A5DB24 /* lab03 */,
 				C11F52E71FE1E4A600A5DB24 /* lab02 */,
 				C11F52D91FE1D9B200A5DB24 /* lab01 */,
 				C11F52D81FE1D9B200A5DB24 /* Products */,

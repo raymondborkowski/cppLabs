@@ -29,27 +29,42 @@ void hailstoneRecursive(int n){
 // EFFECTS: Returns the number of times 'digit' appears in 'n'.
 //      Uses iteration.
 int countDigitsIterative(int n, int digit){
-
-  return 0;  //REPLACE WITH YOUR CODE
-
+    int count = 0;
+    while (n > 0) {
+        if (n % 10 == digit) {
+            count++;
+        }
+        n /=10;
+    }
+    return count;
 }
 
 // REQUIRES: 0 <= digit <= 9, n >= 0
 // EFFECTS: Returns the number of times 'digit' appears in 'n'.
 //      Uses recursion.
 int countDigitsRecursive(int n, int digit){
-    
-  return 0;  //REPLACE WITH YOUR CODE
-
+    int count = 0;
+    if ( n == 0) {
+        return 0;
+    }
+    if (n % 10 == digit) {
+        count++;
+    }
+    return count + countDigitsRecursive(n /= 10, digit);
 }
 
-// REQUIRES: 0 <= digit <= 9, n >= 0
-// EFFECTS: Returns the number of times 'digit' appears in 'n'.
-//      Uses tail recursion.
+int countDigitsTailHelper(int n, int digit, int count){
+    if ( n == 0) {
+        return count;
+    }
+    if (n % 10 == digit) {
+        count++;
+    }
+    return countDigitsTailHelper(n /= 10, digit, count);
+}
+
 int countDigitsTail(int n, int digit){
-
-  return 0;  //REPLACE WITH YOUR CODE
-
+    return countDigitsTailHelper(n, digit, 0);
 }
 
 void hailstoneTest(int n){
@@ -75,6 +90,7 @@ int main() {
   cout << "--------------------------" << endl;
 
   countDigitsTest(201220130, 2);
+  countDigitsTest(44445454, 4);
   countDigitsTest(201220130, 0);
   countDigitsTest(201220130, 7);
   countDigitsTest(0, 0);

@@ -17,7 +17,7 @@ int triple(int x){
 
 //EFFECTS: returns x+1
 int addOne(int x){
-  return x+1;
+  return x+1; 
 }
 
 //EFFECTS: returns -1 if x < 7

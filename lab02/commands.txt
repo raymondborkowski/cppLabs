@@ -1,0 +1,1 @@
+g++ -Wall -Werror -O1 -pedantic lab02.cpp -o lab02

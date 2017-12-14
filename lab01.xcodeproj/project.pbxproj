@@ -29,6 +29,8 @@
 		C11F52E21FE1DC9000A5DB24 /* lab01.out.correct */ = {isa = PBXFileReference; lastKnownFileType = text; name = lab01.out.correct; path = ../../../../Downloads/lab01.out.correct; sourceTree = "<group>"; };
 		C11F52E41FE1DCE500A5DB24 /* lab01.out.correct */ = {isa = PBXFileReference; lastKnownFileType = text; path = lab01.out.correct; sourceTree = "<group>"; };
 		C11F52E51FE1DD0A00A5DB24 /* commands.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = commands.txt; sourceTree = "<group>"; };
+		C11F52E91FE1EBC400A5DB24 /* commands.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = commands.txt; sourceTree = "<group>"; };
+		C11F52EA1FE1F7CF00A5DB24 /* lab02 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = lab02; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,8 +47,10 @@
 		C11F52CE1FE1D9B200A5DB24 = {
 			isa = PBXGroup;
 			children = (
+				C11F52E71FE1E4A600A5DB24 /* lab02 */,
 				C11F52D91FE1D9B200A5DB24 /* lab01 */,
 				C11F52D81FE1D9B200A5DB24 /* Products */,
+				C11F52EA1FE1F7CF00A5DB24 /* lab02 */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,6 +72,14 @@
 				C11F52E51FE1DD0A00A5DB24 /* commands.txt */,
 			);
 			path = lab01;
+			sourceTree = "<group>";
+		};
+		C11F52E71FE1E4A600A5DB24 /* lab02 */ = {
+			isa = PBXGroup;
+			children = (
+				C11F52E91FE1EBC400A5DB24 /* commands.txt */,
+			);
+			path = lab02;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -1,0 +1,2 @@
+
+g++ -Wall -Werror -O1 -pedantic lab03.cpp lab03

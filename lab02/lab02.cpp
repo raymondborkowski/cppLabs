@@ -39,6 +39,18 @@ int countDigitsIterative(int n, int digit){
     return count;
 }
 
+int countDigitsIterativeRemake(int n, int digit) {
+    int count = 0;
+    
+    while (n) {
+        if (n % 10 == digit) {
+            count++;
+        }
+        n /= 10;
+    }
+    return count;
+}
+
 // REQUIRES: 0 <= digit <= 9, n >= 0
 // EFFECTS: Returns the number of times 'digit' appears in 'n'.
 //      Uses recursion.
@@ -76,6 +88,7 @@ void hailstoneTest(int n){
 void countDigitsTest(int n, int digit){
   cout << endl << "  CountDigits test.  How many " << digit << "s in " << n << endl;
   cout << "    Iterative:      " << countDigitsIterative(n, digit) << endl;
+  cout << "    Iterative Remake:      " << countDigitsIterativeRemake(n, digit) << endl;
   cout << "    Recursive:      " << countDigitsRecursive(n, digit) << endl;
   cout << "    Tail Recursive: " << countDigitsTail(n, digit) << endl;
 }

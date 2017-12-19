@@ -76,10 +76,8 @@ int gcd(int a, int b){
 // EFFECTS:  dst now contains the results of applying func to
 //           each element of src
 void map(intModifier func, int src[], int dst[], int length){
-  // TASK 1 - WRITE YOUR FUNCTION IMPLEMENTATION HERE
+  
 }
-
-
 
 
 // REQUIRES: src points to an array of size >= length and length is >= 2

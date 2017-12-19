@@ -76,7 +76,9 @@ int gcd(int a, int b){
 // EFFECTS:  dst now contains the results of applying func to
 //           each element of src
 void map(intModifier func, int src[], int dst[], int length){
-  
+ for (int i = 0; i < length; i++) {
+  dst[i] = func(src[i]);
+ }
 }
 
 

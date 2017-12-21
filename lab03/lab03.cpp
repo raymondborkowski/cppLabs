@@ -4,9 +4,8 @@
 using namespace std;
 
 typedef int (*intModifier)(int);
+typedef int (*intCombiner)(int, int);
 //typedef ____________;
-
-
 
 //***** intModifier functions *****//
 
@@ -28,9 +27,6 @@ int compareToSeven(int x){
   else if (x == 7) {return 0;}
   else {return 1;}
 }
-
-
-
 
 //***** intCombiner functions *****//
 
@@ -67,9 +63,6 @@ int gcd(int a, int b){
   }
 }
 
-
-
-
 // REQUIRES: src points to an array of size >= length
 //           dst points to an array of size >= length
 // MODIFIES: dst
@@ -89,7 +82,13 @@ void map(intModifier func, int src[], int dst[], int length){
 /* int fold(intCombiner func, int src[], int length){
   TASK 2 - WRITE YOUR FUNCTION IMPLEMENTATION HERE
 }*/
-
+int fold(intCombiner func, int src[], int length){
+  int result = func(src[0], src[1]); // base case
+  for (int i = 2; i < length; i++) { // needed if length > 2
+    result = func(result, src[i]);
+  }
+  return result;
+}
 
 void printIntArray(int arr[], int length){
   cout << "{";
@@ -129,7 +128,6 @@ int main(){
   printIntArray(arr4, 4);  cout << endl << endl;
 
 
-  /*
   cout << "Testing fold." << endl;
   cout << "  fold(add, arr1, 4) = " << fold(add, arr1, 4) << endl;
   cout << "  fold(add, arr2, 4) = " << fold(add, arr2, 4) << endl;
@@ -154,7 +152,6 @@ int main(){
   cout << "  fold(gcd, arr3, 4) = " << fold(gcd, arr3, 4) << endl;
   cout << "  fold(gcd, arr4, 4) = " << fold(gcd, arr4, 4) << endl;
   cout << endl;
-  */
 
   return 0;
 }
